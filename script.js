@@ -227,7 +227,7 @@ const projects = {
         category: "SPORTS / MPBL",
 
         description:
-            "Game day graphics created for Meycauyan–Marilao Gems in the Maharlika Pilipinas Basketball League.",
+            "Game day graphics created for Meycauayan–Marilao Gems in the Maharlika Pilipinas Basketball League.",
 
         images: [
 
@@ -235,7 +235,11 @@ const projects = {
             "works/2.png",
             "works/3.png",
             "works/4.png",
-            
+            "works/countdown-4.jpg",
+            "works/countdown-3.jpg",
+            "works/countdown-2.jpg",
+            "works/countdown-1.jpg",
+
         ]
 
     },
@@ -536,10 +540,19 @@ function updateGallery() {
         .querySelectorAll(".gallery-thumb")
         .forEach((thumbnail, index) => {
 
+            const isActive = index === currentIndex;
             thumbnail.classList.toggle(
                 "active",
-                index === currentIndex
+                isActive
             );
+
+            if (isActive) {
+                thumbnail.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest",
+                    inline: "center"
+                });
+            }
 
         });
 
