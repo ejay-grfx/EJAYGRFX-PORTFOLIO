@@ -1125,48 +1125,333 @@ footer a:hover {
 ========================================================= */
 
 body.light {
-    --black: #f3f3f3;
+    --green: #15803d;
+    --black: #f8f9fa;
     --dark: #ffffff;
-    --text: #080808;
-    --muted: #555;
-    --border: rgba(0,0,0,0.12);
+    --gray: #f1f3f5;
+    --text: #0f172a;
+    --muted: #475569;
+    --border: rgba(15, 23, 42, 0.08);
 }
 
+/* Remove cursor glow in light mode to eliminate the green blurry haze */
+body.light .cursor-glow {
+    display: none;
+}
+
+/* Navbar */
 body.light .navbar {
-    background: rgba(243,243,243,0.85);
+    background: rgba(248, 249, 250, 0.88);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+body.light .logo span,
+body.light .footer-logo span {
+    color: #15803d;
+}
+
+body.light .nav-link {
+    color: #475569;
+}
+
+body.light .nav-link:hover,
+body.light .nav-link.active {
+    color: #15803d;
 }
 
 body.light .theme-toggle {
-    color: black;
+    color: #0f172a;
+    border-color: rgba(15, 23, 42, 0.12);
+    background: #ffffff;
+}
+
+body.light .theme-toggle:hover {
+    background: #0f172a;
+    color: #ffffff;
 }
 
 body.light .menu-toggle span {
-    background: black;
+    background: #0f172a;
+}
+
+body.light .nav-cta {
+    background: #15803d;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(21, 128, 61, 0.22);
+}
+
+body.light .nav-cta:hover {
+    background: #166534;
+    box-shadow: 0 6px 20px rgba(21, 128, 61, 0.32);
+}
+
+/* Hero Section */
+body.light .eyebrow {
+    color: #15803d;
+}
+
+body.light .hero h1 span {
+    color: #15803d;
+}
+
+body.light .hero-description {
+    color: #475569;
+}
+
+body.light .hero-image img {
+    border-color: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.light .image-ring {
+    border-color: #15803d;
+    box-shadow: 0 0 0 4px rgba(21, 128, 61, 0.12), 0 10px 28px rgba(21, 128, 61, 0.16);
+}
+
+/* Buttons */
+body.light .btn.primary {
+    background: #15803d;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(21, 128, 61, 0.22);
+}
+
+body.light .btn.primary:hover {
+    background: #166534;
+    box-shadow: 0 8px 25px rgba(21, 128, 61, 0.35);
+}
+
+body.light .btn.secondary {
+    border-color: rgba(15, 23, 42, 0.15);
+    color: #0f172a;
+    background: #ffffff;
+}
+
+body.light .btn.secondary:hover {
+    border-color: #15803d;
+    color: #15803d;
+    background: rgba(21, 128, 61, 0.04);
+}
+
+/* About Section */
+body.light .section-number {
+    color: #15803d;
+}
+
+body.light .section-heading h2 span {
+    color: #15803d;
+}
+
+body.light .about-text p {
+    color: #334155;
+}
+
+body.light .stat {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+body.light .stat strong {
+    color: #15803d;
+}
+
+body.light .stat span {
+    color: #64748b;
+}
+
+/* Experience Section */
+body.light .experience-item {
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light .experience-date {
+    color: #15803d;
+}
+
+body.light .experience-info h4 {
+    color: #15803d;
+}
+
+body.light .experience-info p {
+    color: #64748b;
+}
+
+body.light .experience-description {
+    color: #334155;
+}
+
+/* Skills Section */
+body.light .skill-card {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+body.light .skill-card:hover {
+    border-color: rgba(21, 128, 61, 0.35);
+    box-shadow: 0 12px 30px rgba(21, 128, 61, 0.1);
+}
+
+body.light .skill-icon {
+    background: #15803d;
+    color: #ffffff;
+}
+
+body.light .skill-card p {
+    color: #475569;
+}
+
+body.light .skill-bar {
+    background: #e2e8f0;
+}
+
+body.light .skill-bar span {
+    background: #15803d;
+}
+
+/* Marquee */
+body.light .marquee {
+    background: #0f172a;
+    color: #ffffff;
+}
+
+/* Works Section */
+body.light .works-intro {
+    color: #64748b;
+}
+
+body.light .filter-btn {
+    background: #ffffff;
+    color: #64748b;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+body.light .filter-btn:hover,
+body.light .filter-btn.active {
+    background: #15803d;
+    border-color: #15803d;
+    color: #ffffff;
+}
+
+body.light .work-overlay {
+    background: rgba(15, 23, 42, 0.88);
+    color: #ffffff;
+}
+
+body.light .work-info {
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light .work-info p {
+    color: #64748b;
+}
+
+body.light .work-arrow {
+    color: #15803d;
+}
+
+/* Modal */
+body.light .modal-backdrop {
+    background: rgba(15, 23, 42, 0.45);
 }
 
 body.light .modal-container {
-    background: #f5f5f5;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
 
 body.light .modal-close {
-    color: black;
+    color: #0f172a;
+    border-color: rgba(15, 23, 42, 0.12);
+    background: #ffffff;
+}
+
+body.light .modal-close:hover {
+    background: #15803d;
+    color: #ffffff;
+    border-color: #15803d;
+}
+
+body.light .modal-category {
+    color: #15803d;
+}
+
+body.light .modal-counter {
+    color: #64748b;
+}
+
+body.light .modal-counter #currentImage {
+    color: #15803d;
+}
+
+body.light .modal-description {
+    color: #475569;
 }
 
 body.light .gallery-main {
-    background: #ddd;
+    background: #0f172a;
 }
 
 body.light .gallery-arrow {
-    color: black;
+    background: #ffffff;
+    color: #0f172a;
+    border-color: rgba(15, 23, 42, 0.12);
 }
 
+body.light .gallery-arrow:hover {
+    background: #15803d;
+    color: #ffffff;
+    border-color: #15803d;
+}
+
+body.light .gallery-thumb {
+    border-color: transparent;
+}
+
+body.light .gallery-thumb.active,
+body.light .gallery-thumb:hover {
+    border-color: #15803d;
+}
+
+/* Image Viewer */
 body.light .image-viewer {
-    background: rgba(255,255,255,0.96);
+    background: rgba(15, 23, 42, 0.95);
 }
 
 body.light .viewer-close {
-    color: black;
-    border-color: black;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.light .viewer-close:hover {
+    border-color: #ffffff;
+}
+
+/* Contact Section */
+body.light .contact-content h2 span {
+    color: #15803d;
+}
+
+body.light .contact-content > p:not(.section-number) {
+    color: #475569;
+}
+
+/* Footer */
+body.light footer {
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+body.light footer p {
+    color: #64748b;
+}
+
+body.light footer a {
+    color: #0f172a;
+}
+
+body.light footer a:hover {
+    color: #15803d;
 }
 
 
@@ -1192,6 +1477,12 @@ body.light .viewer-close {
         flex-direction: column;
 
         transition: 0.4s;
+    }
+
+    body.light .nav-links {
+        background: #ffffff;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     }
 
     .nav-links.active {
